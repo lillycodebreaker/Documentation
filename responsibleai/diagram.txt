@@ -1,0 +1,81 @@
+flowchart TD
+    A[AI / ML Use Case Submitted] --> B[AI-Assisted Intake]
+
+    B --> B1[Check Completeness]
+    B --> B2[Extract Intended Use]
+    B --> B3[Identify Population & Business Impact]
+    B --> B4[Identify Model / Agent / Data / Tools]
+
+    B1 --> C[AI Asset & Use-Case Registry]
+    B2 --> C
+    B3 --> C
+    B4 --> C
+
+    C --> D[Risk Triage Engine]
+
+    D --> D1[Policy / Rules]
+    D --> D2[AI-Assisted Risk Signals]
+
+    D1 --> E{Risk Tier}
+    D2 --> E
+
+    E -->|Low Risk| F[Automated / Fast-Path Review]
+    E -->|Medium Risk| G[AI-Assisted Human Review]
+    E -->|High Risk| H[Full AIRB Expert Review]
+
+    F --> I[Automated Evidence Collection]
+    G --> I
+    H --> I
+
+    I --> I1[Performance Testing]
+    I --> I2[Fairness / Bias Testing]
+    I --> I3[Privacy / PHI Testing]
+    I --> I4[GenAI Safety / Hallucination Testing]
+    I --> I5[Red Team / Adversarial Testing]
+    I --> I6[Agent / Tool Safety Testing]
+
+    I1 --> J{Meets Acceptance Criteria?}
+    I2 --> J
+    I3 --> J
+    I4 --> J
+    I5 --> J
+    I6 --> J
+
+    J -->|No| K[Remediation]
+    K --> I
+
+    J -->|Yes| L[Approval / Deployment]
+
+    L --> M[Continuous Production Monitoring]
+
+    M --> M1[Performance Drift]
+    M --> M2[Data / PHI Changes]
+    M --> M3[Model / Prompt Changes]
+    M --> M4[New Tools / Agent Actions]
+    M --> M5[Safety Incidents]
+
+    M1 --> N{Material Risk Change?}
+    M2 --> N
+    M3 --> N
+    M4 --> N
+    M5 --> N
+
+    N -->|No| M
+    N -->|Yes| D
+
+
+
+
+flowchart LR
+    A[Aha<br/>Business Purpose] --> G[Governance Knowledge Layer]
+    B[Rally<br/>Features / Stories] --> G
+    C[Architecture<br/>Systems & Data] --> G
+    D[GitHub<br/>Implementation] --> G
+    E[Model Registry<br/>Models & Versions] --> G
+    F[Production Telemetry<br/>Actual Behavior] --> G
+
+    G --> H[AI-Assisted Intake]
+    H --> I[Risk Signals]
+    I --> J[AIRB Reviewer]
+
+
