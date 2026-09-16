@@ -1,0 +1,55 @@
+I would send **separate notes** to Chris and Omid. Don't frame anything as correcting mistakes from the interview. A thank-you note is not the place to say, “I realized my answer was wrong.” Instead, show that their questions **continued your thinking** and led you to a useful operational idea.
+
+For Chris especially, the scalability discussion is a natural opening because he described the dramatic growth in AIRB volume and the challenge of getting adequate use-case context. I would attach the diagram only if you can do so cleanly; otherwise, summarize the idea in 2–3 sentences. For Omid, emphasize risk-based evaluation, healthcare use cases, and the combination of automated evaluation with human/clinical judgment.
+
+### To Chris
+
+Hi Chris,
+
+Thank you again for the thoughtful discussion today. I especially appreciated your questions around GenAI evaluation, the limitations of automated evaluation approaches, and the operational challenge of scaling Responsible AI review as AIRB volume continues to grow.
+
+Our conversation gave me more to think about after the interview. In particular, I have been considering how to scale Responsible AI operations without trying to automate away the judgment of the Review Board.
+
+My initial thought is to focus automation where it can best assist reviewers: improving intake completeness, bringing together use-case context and technical evidence, performing initial risk triage, automating repeatable testing and evidence collection, and continuously monitoring material changes after approval. Lower-risk use cases could follow a more standardized path, while AIRB experts could concentrate their time on higher-consequence decisions.
+
+I also kept thinking about your point that GitHub alone cannot provide the business context needed for risk assessment. That helped refine my idea: rather than relying on source code, an assisted governance capability could combine business context from sources such as Aha/Rally with architecture, model/data information, implementation evidence, and eventually production telemetry.
+
+I attached a simple diagram capturing the concept. It is only an initial thought, but our conversation prompted me to think much more deeply about the operational scalability problem.
+
+I really enjoyed meeting you and learning more about the team. The combination of technical evaluation, Responsible AI, healthcare, and helping teams safely move AI into production is exactly the kind of work I would be excited to contribute to.
+
+Thank you again for your time and the excellent discussion.
+
+Best,
+Lily
+
+That note subtly addresses the weakness from your interview. You originally pushed GitHub automation; Chris explained why that wasn't sufficient. Now you're demonstrating **you listened, incorporated his criticism, and improved the architecture**. That's much better than explicitly correcting yourself.
+
+### To Omid
+
+Omid seemed particularly interested in your healthcare examples, evaluation validity and the role of human judgment. I'd make his note somewhat different.
+
+Hi Omid,
+
+Thank you very much for the thoughtful conversation today. I particularly enjoyed discussing the provider voice-bot use case, healthcare AI evaluation, and the importance of combining automated testing with appropriate human expertise.
+
+Your questions reinforced something I have seen repeatedly in production AI: a metric by itself is not enough. Responsible AI evaluation has to start with the intended use, the affected population, and the consequences of different failure modes. That determines which performance, fairness, safety, privacy, and human-oversight measures actually matter.
+
+After our conversation, I also spent some time thinking about the scalability challenge facing AIRB as the number and variety of AI use cases continue to increase. My initial thinking is that automation can help with intake completeness, risk triage, repeatable evaluation and evidence collection, while human experts remain focused on higher-risk and more consequential judgments—particularly clinical, member-impacting, and other sensitive healthcare applications.
+
+I really appreciated hearing your perspective as both a physician and data scientist. The breadth of use cases the team reviews, and the opportunity to help teams identify the right risks, tests, metrics, and safeguards, make this role especially interesting to me.
+
+Thank you again for your time. I very much enjoyed meeting you and Chris and would be excited about the opportunity to contribute to the Responsible AI team.
+
+Best,
+Lily
+
+I prefer **Chris's note with the diagram attached**, because the diagram directly follows the scalability/automation conversation you had with him. For Omid, I would probably **not attach the same diagram** unless you're sending one email to both; his note is stronger when centered on healthcare risk and evaluation.
+
+One more thing: I would **not send the huge Mermaid diagram exactly as we created it**. For an interview follow-up, simplify it to about six boxes:
+
+**Intake → Context/Evidence → Risk Triage → Risk-Based Review → Automated Testing/Evidence → Continuous Monitoring**
+
+with **Human AIRB Judgment** prominently spanning the higher-risk path.
+
+That will look like a thoughtful executive/technical concept you developed after the conversation, rather than like you spent the evening trying to redo an interview answer.
